@@ -38,10 +38,14 @@ L'application est conçue pour tous, mais avec une attention particulière pour 
 Ce projet est un projet Expo standard.
 
 1. **Installer les dépendances**  
-   npm install
+   ```bash
+    npm install
+    ```
 
 2. **Lancer l'application**  
-   npx expo start
+   ```bash
+    npx expo start
+    ```
 
 Ceci lancera Metro. Vous pourrez ensuite :
 
