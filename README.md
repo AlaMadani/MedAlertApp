@@ -1,50 +1,89 @@
-# Welcome to your Expo app 👋
+💊 MedAlert - Application Mobile de Rappel de Médicaments
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+MedAlert est une application mobile cross-platform (iOS & Android) conçue pour aider les utilisateurs à gérer leurs prises de médicaments de manière simple, fiable et accessible à tous.
 
-## Get started
+Ce projet est construit avec React Native et Expo, en mettant l'accent sur une expérience utilisateur claire et une accessibilité maximale, en particulier pour les seniors.
 
-1. Install dependencies
+✨ Fonctionnalités (Features)
 
-   ```bash
-   npm install
-   ```
+Basé sur notre document de conception, MedAlert offre les services suivants :
 
-2. Start the app
+Tableau de Bord Quotidien : Visualisez rapidement les médicaments à prendre aujourd'hui, avec un statut clair (Pris, En attente, À venir).
 
-   ```bash
-   npx expo start
-   ```
+Gestion Complète des Médicaments : Ajoutez, modifiez et suivez vos médicaments avec des détails complets (dosage, type, fréquence, durée, notes, etc.).
 
-In the output, you'll find options to open the app in a
+Calendrier Hebdomadaire : Un affichage clair de votre planning de prises pour toute la semaine.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Notifications Intelligentes : Recevez des rappels fiables pour chaque prise. Les notifications peuvent être personnalisées (son, vibration, snooze).
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Suivi d'Observance : Suivez vos progrès avec des statistiques d'observance (ex: "92% adherence") pour rester motivé.
 
-## Get a fresh project
+Gestion des Données : Exportez votre historique de prises (idéal pour un rendez-vous médical) ou supprimez vos données.
 
-When you're ready, run:
+🎯 Public Cible
 
-```bash
-npm run reset-project
-```
+L'application est conçue pour tous, mais avec une attention particulière pour :
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Seniors (60 ans+) : Interface très lisible, gros caractères, et navigation simple.
 
-## Learn more
+Adultes Actifs (30-59 ans) : Actions rapides, notifications discrètes et efficacité.
 
-To learn more about developing your project with Expo, look at the following resources:
+Jeunes Adultes (18-29 ans) : Une interface moderne, esthétique et intuitive.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+🛠️ Tech Stack (Socle Technique)
 
-## Join the community
+Framework : React Native avec Expo
 
-Join our community of developers creating universal apps.
+Navigation : Expo Router (File-based routing)
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Langage : TypeScript
+
+Icônes : Lucide React Native
+
+Styles : StyleSheet (avec un système de "Theme" personnalisé)
+
+(Backend prévu : Firebase / Firestore pour la synchronisation des données)
+
+🚀 Démarrage Rapide (Get Started)
+
+Ce projet est un projet Expo standard.
+
+Installer les dépendances
+
+npm install
+
+
+Lancer l'application
+
+npx expo start
+
+
+Ceci lancera Metro. Vous pourrez ensuite :
+
+Appuyer sur a pour ouvrir dans un émulateur Android.
+
+Appuyer sur i pour ouvrir dans un simulateur iOS.
+
+Scanner le QR code avec l'application Expo Go sur votre téléphone.
+
+Le développement principal se fait dans le dossier app/.
+
+📸 Captures d'écran (Screenshots)
+
+(Vous pouvez insérer ici des captures d'écran de l'application)
+
+Accueil
+
+Ajout Médicament
+
+Calendrier
+
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+📄 Licence
+
+Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.

@@ -1,53 +1,72 @@
-/**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
- */
-
-import { Platform } from 'react-native';
-
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
+// MedAlertNative/constants/theme.ts
 
 export const Colors = {
-  light: {
-    text: '#11181C',
-    background: '#fff',
-    tint: tintColorLight,
-    icon: '#687076',
-    tabIconDefault: '#687076',
-    tabIconSelected: tintColorLight,
+  background: '#f8fafc',
+  foreground: '#1e293b',
+  card: '#ffffff',
+  cardForeground: '#1e293b',
+
+  primary: '#3b82f6',
+  primaryForeground: '#ffffff',
+  
+  secondary: '#f1f5f9',
+  secondaryForeground: '#475569',
+  
+  muted: '#f1f5f9',
+  mutedForeground: '#64748b',
+  
+  accent: '#e0f2fe',
+  accentForeground: '#0369a1',
+  
+  destructive: '#ef4444',
+  destructiveForeground: '#ffffff',
+  
+  border: 'rgba(148, 163, 184, 0.3)',
+  inputBackground: '#f8fafc',
+  switchBackground: '#cbd5e1',
+  ring: '#3b82f6',
+
+  // Medical Theme Colors
+  medical: {
+    blue: '#3b82f6',
+    green: '#10b981',
+    orange: '#f59e0b',
+    purple: '#8b5cf6',
+    red: '#ef4444',
+    pink: '#ec4899',
+    teal: '#14b8a6',
   },
-  dark: {
-    text: '#ECEDEE',
-    background: '#151718',
-    tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
-    tabIconSelected: tintColorDark,
+
+  // Greys
+  grey: {
+    100: '#F3F4F6',
+    200: '#E5E7EB',
+    300: '#D1D5DB',
+    400: '#9CA3AF',
+    500: '#6B7280',
+    600: '#4B5563',
+    700: '#374151',
+    800: '#1F2937',
+    900: '#111827',
   },
 };
 
-export const Fonts = Platform.select({
-  ios: {
-    /** iOS `UIFontDescriptorSystemDesignDefault` */
-    sans: 'system-ui',
-    /** iOS `UIFontDescriptorSystemDesignSerif` */
-    serif: 'ui-serif',
-    /** iOS `UIFontDescriptorSystemDesignRounded` */
-    rounded: 'ui-rounded',
-    /** iOS `UIFontDescriptorSystemDesignMonospaced` */
-    mono: 'ui-monospace',
-  },
-  default: {
-    sans: 'normal',
-    serif: 'serif',
-    rounded: 'normal',
-    mono: 'monospace',
-  },
-  web: {
-    sans: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
-    serif: "Georgia, 'Times New Roman', serif",
-    rounded: "'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif",
-    mono: "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
-  },
-});
+export const FontWeights = {
+  medium: '500' as const,
+  normal: '400' as const,
+  bold: '700' as const,
+};
+
+export const Spacing = {
+  xs: 4,
+  sm: 8,
+  md: 12,
+  lg: 16,
+  xl: 24,
+};
+
+export const theme = {
+  colors: Colors,
+  fontWeights: FontWeights,
+  spacing: Spacing,
+};
